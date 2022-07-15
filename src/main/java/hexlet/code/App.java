@@ -10,28 +10,28 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        System.out.print("Please enter the game number and press Enter.\n1 - Greet\n2 - Even\n3 - Calc");
-        System.out.print("4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
+        System.out.println("Please enter the game number and press Enter.\n1 - Greet\n2 - Even\n3 - Calc");
+        System.out.println("4 - GCD\n5 - Progression\n6 - Prime\n0 - Exit");
         Scanner scan = new Scanner(System.in);
-        var number = scan.nextInt();
-        System.out.println("Your choice: " + number);
+        System.out.print("Your choice: ");
+        var number = scan.next();
         switch (number) {
-            case 1:
+            case "1":
                 Greeting.greeting();
                 break;
-            case 2:
+            case "2":
                 Even.even();
                 break;
-            case 3:
+            case "3":
                 Calc.calc();
                 break;
-            case 4:
+            case "4":
                 Gcd.gcd();
                 break;
-            case 5:
+            case "5":
                 Progression.progression();
                 break;
-            case 6:
+            case "6":
                 Prime.prime();
                 break;
             default:

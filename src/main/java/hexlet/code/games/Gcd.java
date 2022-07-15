@@ -37,6 +37,6 @@ public class Gcd {
                 break;
             }
         }
-        engine.winMessage(engine.round());
+        engine.winMessage();
     }
 }

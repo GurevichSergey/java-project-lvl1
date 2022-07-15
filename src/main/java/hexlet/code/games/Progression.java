@@ -37,6 +37,6 @@ public class Progression {
                 break;
             }
         }
-        engine.winMessage(engine.round());
+        engine.winMessage();
     }
 }

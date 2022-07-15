@@ -33,6 +33,6 @@ public class Prime {
                 break;
             }
         }
-        engine.winMessage(engine.round());
+        engine.winMessage();
     }
 }
