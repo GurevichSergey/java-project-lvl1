@@ -12,10 +12,9 @@ public class Calc {
         engine.greeting();
         System.out.println("What is the result of the expression?");
         Random random = new Random();
-        var temp = 0;
-        while (temp < 3) {
-            var number1 = random.nextInt(20);
-            var number2 = random.nextInt(20);
+        while (engine.round() < engine.getRoundToWin()) {
+            var number1 = random.nextInt();
+            var number2 = random.nextInt();
             String[] array = {"*", "+", "-"};
             String operation = array[random.nextInt(array.length)];
             String question =  number1 + operation + number2;
@@ -33,16 +32,16 @@ public class Calc {
                 case "*":
                     result = number1 * number2;
                     break;
+                default:
+                    break;
             }
             if (userAnswer == result) {
-                System.out.println("Correct!");
-                temp++;
+                engine.correctAnswer();
             } else {
                 System.out.print(userAnswer + " is wrong answer ;(. Correct answer was " + result + ". ");
                 System.out.println("Let's try again, " + engine.getName());
                 break;
             }
-        }
-        engine.winMessage(temp);
+        } engine.winMessage(engine.round());
     }
 }

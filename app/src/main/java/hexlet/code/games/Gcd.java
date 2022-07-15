@@ -13,10 +13,9 @@ public class Gcd {
         var engine = new Engine();
         engine.greeting();
         Random random = new Random();
-        var temp = 0;
         System.out.println("Find the greatest common divisor of given numbers.");
-        while (temp < 3) {
-            int[] question = {random.nextInt(50), random.nextInt(50)};
+        while (engine.round() < engine.getRoundToWin()) {
+            int[] question = {random.nextInt(), random.nextInt()};
             var string = Arrays.toString(question).replace(",", "").replace("[", "").replace("]", "");
             System.out.println("Question: " + string);
             var userAnswer = scan.nextInt();
@@ -24,21 +23,20 @@ public class Gcd {
             var firsNumber = question[0];
             var secondNumber = question[1];
             var count = Math.min(firsNumber, secondNumber);
-            for (int n = count; n >= 1; n--){
-                if (firsNumber % n == 0 && secondNumber % n == 0){
+            for (int n = count; n >= 1; n--) {
+                if (firsNumber % n == 0 && secondNumber % n == 0) {
                     count = n;
                     break;
                 }
             }
             if (userAnswer == count) {
-                System.out.println("Correct!");
-                temp++;
+                engine.correctAnswer();
             } else {
                 System.out.print(userAnswer + " is wrong answer ;(. Correct answer was " + count + ". ");
                 System.out.println("Let's try again, " + engine.getName());
                 break;
             }
         }
-        engine.winMessage(temp);
+        engine.winMessage(engine.round());
     }
 }

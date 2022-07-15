@@ -1,8 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,14 +10,13 @@ public class Progression {
         var engine = new Engine();
         engine.greeting();
         Random random = new Random();
-        var temp = 0;
-        while (temp < 3) {
+        while (engine.round() < engine.getRoundToWin()) {
             var arrayLength = random.nextInt(5, 11);
             int[] array = new int[arrayLength];
-            array[0] = random.nextInt(10);
-            var step = random.nextInt(1, 7);
+            array[0] = random.nextInt();
+            var step = random.nextInt();
             for (var i = 1; i < array.length; i++) {
-                array[i] = array[i-1] + step;
+                array[i] = array[i - 1] + step;
             }
             var questionNumber = random.nextInt(arrayLength);
             var result = array[questionNumber];
@@ -33,14 +30,13 @@ public class Progression {
             var userAnswer = scan.nextInt();
             System.out.println("Your answer: " + userAnswer);
             if (userAnswer == result) {
-                System.out.println("Correct!");
-                temp++;
+                engine.correctAnswer();
             } else {
-                System.out.print(userAnswer + " is wrong answer ;(. Correct answer was " + array[questionNumber] + ". ");
-                System.out.println("Let's try again, " + engine.getName());
+                System.out.print(userAnswer + " is wrong answer ;(. Correct answer was ");
+                System.out.print(array[questionNumber] + ". Let's try again, " + engine.getName());
                 break;
             }
         }
-        engine.winMessage(temp);
+        engine.winMessage(engine.round());
     }
 }

@@ -12,9 +12,8 @@ public class Prime {
         engine.greeting();
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         Random random = new Random();
-        var temp = 0;
-        while (temp < 3) {
-            var number = random.nextInt(100);
+        while (engine.round() < engine.getRoundToWin()) {
+            var number = random.nextInt();
             System.out.println("Question: " + number);
             var userAnswer = scan.next();
             System.out.println("Your answer: " + userAnswer);
@@ -27,14 +26,13 @@ public class Prime {
                 }
             }
             if (userAnswer.equals(result)) {
-                System.out.println("Correct!");
-                temp++;
+                engine.correctAnswer();
             } else {
                 System.out.print(userAnswer + " is wrong answer ;(. Correct answer was " + result + ". ");
                 System.out.println("Let's try again, " + engine.getName());
                 break;
             }
         }
-        engine.winMessage(temp);
+        engine.winMessage(engine.round());
     }
 }
