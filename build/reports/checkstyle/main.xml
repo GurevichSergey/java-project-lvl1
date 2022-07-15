@@ -10,13 +10,7 @@
 <file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/Cli.java">
 </file>
 <file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/Engine.java">
-<error line="10" column="5" severity="error" message="Class &apos;Engine&apos; looks like designed for extension (can be subclassed), but the method &apos;greeting&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Engine&apos; final or making the method &apos;greeting&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="16" column="5" severity="error" message="Class &apos;Engine&apos; looks like designed for extension (can be subclassed), but the method &apos;getName&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Engine&apos; final or making the method &apos;getName&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="19" column="5" severity="error" message="Class &apos;Engine&apos; looks like designed for extension (can be subclassed), but the method &apos;round&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Engine&apos; final or making the method &apos;round&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="22" column="5" severity="error" message="Class &apos;Engine&apos; looks like designed for extension (can be subclassed), but the method &apos;correctAnswer&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Engine&apos; final or making the method &apos;correctAnswer&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="26" column="5" severity="error" message="Class &apos;Engine&apos; looks like designed for extension (can be subclassed), but the method &apos;getRoundToWin&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Engine&apos; final or making the method &apos;getRoundToWin&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="29" column="5" severity="error" message="Class &apos;Engine&apos; looks like designed for extension (can be subclassed), but the method &apos;winMessage&apos; does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class &apos;Engine&apos; final or making the method &apos;winMessage&apos; static/final/abstract/empty, or adding allowed annotation for the method." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
-<error line="29" column="32" severity="error" message="&apos;round&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
+<error line="29" column="38" severity="error" message="&apos;round&apos; hides a field." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 </file>
 <file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Calc.java">
 </file>
@@ -29,6 +23,5 @@
 <file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Prime.java">
 </file>
 <file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Progression.java">
-<error line="14" column="46" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
 </checkstyle>

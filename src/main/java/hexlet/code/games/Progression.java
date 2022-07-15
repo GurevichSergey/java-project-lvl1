@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Progression {
-    public static void main(String[] args) {
+    public static void progression() {
         Scanner scan = new Scanner(System.in);
         var engine = new Engine();
         engine.greeting();

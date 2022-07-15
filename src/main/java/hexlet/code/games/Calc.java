@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Calc {
-    public static void main(String[] args) {
+    public static void calc() {
         Scanner scan = new Scanner(System.in);
         var engine = new Engine();
         engine.greeting();
