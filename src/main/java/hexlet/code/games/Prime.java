@@ -13,7 +13,7 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var number = random.nextInt(100);
+            var number = random.nextInt();
             System.out.println("Question: " + number);
             var userAnswer = scan.next();
             System.out.println("Your answer: " + userAnswer);

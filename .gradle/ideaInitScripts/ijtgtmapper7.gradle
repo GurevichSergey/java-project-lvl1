@@ -1,0 +1,5 @@
+ext.pathMapper = [:]
+ext.pathMapper.put('C:/Users/Pacific/.jdks/corretto-16.0.2/bin/java.exe', '/mnt/c/Users/Pacific/.jdks/corretto-16.0.2/bin/java.exe')
+ext.pathMapper.put('//wsl\$/Ubuntu/home/name/java-project-lvl1', '/home/name/java-project-lvl1')
+ext.pathMapper.put("<<target java executable path>>", '/usr/lib/jvm/java-17-openjdk-amd64/bin/java')
+ext.mapPath = { path -> pathMapper.get(path) ?: path }

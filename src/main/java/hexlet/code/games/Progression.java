@@ -11,7 +11,7 @@ public class Progression {
         engine.greeting();
         Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var arrayLength = random.nextInt(5, 11);
+            var arrayLength = random.nextInt();
             int[] array = new int[arrayLength];
             array[0] = random.nextInt();
             var step = random.nextInt();
