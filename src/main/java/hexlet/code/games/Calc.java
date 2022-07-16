@@ -1,26 +1,23 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-
 import java.util.Random;
-import java.util.Scanner;
+
 
 public class Calc {
     public static void calc() {
-        Scanner scan = new Scanner(System.in);
         var engine = new Engine();
         engine.greeting();
         System.out.println("What is the result of the expression?");
         Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var number1 = random.nextInt();
-            var number2 = random.nextInt();
+            var number1 = random.nextInt(50);
+            var number2 = random.nextInt(50);
             String[] array = {"*", "+", "-"};
             String operation = array[random.nextInt(array.length)];
             String question =  number1 + operation + number2;
             System.out.println("Question: " + question);
-            var userAnswer = scan.nextInt();
-            System.out.println("Your answer: " + userAnswer);
+            engine.numberUserAnswer();
             int result = 0;
             switch (operation) {
                 case "+":
@@ -35,11 +32,11 @@ public class Calc {
                 default:
                     break;
             }
-            if (userAnswer == result) {
+            engine.setNumberResult(result);
+            if (engine.getNumberAnswer() == result) {
                 engine.correctAnswer();
             } else {
-                System.out.print(userAnswer + " is wrong answer ;(. Correct answer was " + result + ". ");
-                System.out.println("Let's try again, " + engine.getName());
+                engine.wrongNumberAnswer();
                 break;
             }
         } engine.winMessage();
