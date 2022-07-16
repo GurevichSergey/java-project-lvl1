@@ -8,12 +8,20 @@ public class Engine {
     private int round = 0;
     private int numberAnswer;
     private String stringAnswer;
-    public final void numberQuestion() {
+    private int numberResult;
+    private String stringResult;
+    public final void setStringResult(String result) {
+        stringResult = result;
+    }
+    public final void setNumberResult(int result) {
+        numberResult = result;
+    }
+    public final void numberUserAnswer() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Your choice: ");
         numberAnswer = scan.nextInt();
     }
-    public final void stringQuestion() {
+    public final void stringUserAnswer() {
         Scanner scan = new Scanner(System.in);
         System.out.print("Your choice: ");
         stringAnswer = scan.next();
@@ -40,6 +48,14 @@ public class Engine {
     public final void correctAnswer() {
         System.out.println("Correct!");
         round++;
+    }
+    public final void wrongNumberAnswer() {
+        System.out.print(numberAnswer + " is wrong answer ;(. Correct answer was " + numberResult + ". ");
+        System.out.println("Let's try again, " + name);
+    }
+    public final void wrongStringAnswer() {
+        System.out.print(stringAnswer + " is wrong answer ;(. Correct answer was " + stringResult + ". ");
+        System.out.println("Let's try again, " + name);
     }
     public final int getRoundToWin() {
         return roundToWin;
