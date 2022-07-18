@@ -8,7 +8,7 @@ public class Progression {
         engine.greeting();
         Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var arrayLength = engine.getRandomNumber();
+            var arrayLength = engine.getRandomArrayLength();
             int[] array = new int[arrayLength];
             array[0] = engine.getRandomNumber();
             var step = engine.getRandomNumber();
