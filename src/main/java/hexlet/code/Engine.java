@@ -14,7 +14,7 @@ public class Engine {
     public final int getRandomNumber() {
         Random random = new Random();
         final int beginningBound = 5;
-        final int endingBound = 100;
+        final int endingBound = 11;
         return random.nextInt(beginningBound, endingBound);
     }
     public final void setStringResult(String result) {
