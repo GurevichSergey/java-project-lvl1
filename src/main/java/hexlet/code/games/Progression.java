@@ -10,8 +10,8 @@ public class Progression {
         while (engine.round() < engine.getRoundToWin()) {
             var arrayLength = random.nextInt(5, 11);
             int[] array = new int[arrayLength];
-            array[0] = random.nextInt();
-            var step = random.nextInt();
+            array[0] = random.nextInt(100);
+            var step = random.nextInt(100);
             for (var i = 1; i < array.length; i++) {
                 array[i] = array[i - 1] + step;
             }
