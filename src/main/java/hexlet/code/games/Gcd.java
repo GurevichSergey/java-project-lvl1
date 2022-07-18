@@ -24,6 +24,9 @@ public class Gcd {
                     break;
                 }
             }
+            if (count == 0) {
+                count = Math.max(firsNumber, secondNumber);
+            }
             engine.setNumberResult(count);
             if (engine.getNumberAnswer() == count) {
                 engine.correctAnswer();
