@@ -11,13 +11,13 @@ public class Calc {
         System.out.println("What is the result of the expression?");
         Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var number1 = random.nextInt(50);
-            var number2 = random.nextInt(50);
+            var number1 = random.nextInt();
+            var number2 = random.nextInt();
             String[] array = {"*", "+", "-"};
             String operation = array[random.nextInt(array.length)];
             String question =  number1 + " " + operation + " " + number2;
             System.out.println("Question: " + question);
-            engine.numberUserAnswer();
+            engine.stringUserAnswer();
             int result = 0;
             switch (operation) {
                 case "+":
