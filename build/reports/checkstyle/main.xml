@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="9.2.1">
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/App.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/Cli.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/Engine.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Calc.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Even.java">
+<error line="6" column="8" severity="error" message="Unused import - java.util.Scanner." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Gcd.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Greeting.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Prime.java">
+</file>
+<file name="/home/name/java-project-lvl1/src/main/java/hexlet/code/games/Progression.java">
+<error line="12" column="46" severity="error" message="&apos;5&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="12" column="49" severity="error" message="&apos;11&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+</file>
+</checkstyle>

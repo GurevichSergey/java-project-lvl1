@@ -4,17 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5be719f1-a57c-49a5-96f2-e30558aa2747" name="Changes" comment="Update build.gradle">
+    <list default="true" id="5be719f1-a57c-49a5-96f2-e30558aa2747" name="Changes" comment="Update Progression">
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/games/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/games/Calc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/games/Even.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/games/Even.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/hexlet/code/games/Gcd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hexlet/code/games/Gcd.java" afterDir="false" />
@@ -89,12 +87,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -132,7 +124,7 @@
       <command value="gradle checkstyleMain" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.java-project-lvl1 [installDist]">
+  <component name="RunManager" selected="Gradle.java-project-lvl1 [checkstyleMain]">
     <configuration name="java-project-lvl1 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -240,11 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.java-project-lvl1 [checkstyleMain]" />
+        <item itemvalue="Gradle.java-project-lvl1 [build]" />
         <item itemvalue="Gradle.java-project-lvl1 [installDist]" />
         <item itemvalue="Gradle.java-project-lvl1 [clean]" />
         <item itemvalue="Gradle.java-project-lvl1 [run]" />
-        <item itemvalue="Gradle.java-project-lvl1 [build]" />
-        <item itemvalue="Gradle.java-project-lvl1 [checkstyleMain]" />
       </list>
     </recent_temporary>
   </component>
@@ -460,7 +452,56 @@
       <option name="project" value="LOCAL" />
       <updated>1657905390166</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Update build.gradle">
+      <created>1657980442215</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980442215</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Update Engine">
+      <created>1657980466736</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980466736</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Update Calc">
+      <created>1657980483144</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980483144</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Update Even">
+      <created>1657980499192</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980499192</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Update Gcd">
+      <created>1657980510183</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980510183</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Update Prime">
+      <created>1657980525651</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980525651</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Update Progression">
+      <created>1657980538248</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1657980538248</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -475,10 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="create gradle project and add App" />
-    <MESSAGE value="changes App" />
-    <MESSAGE value="upd hexlet.code" />
-    <MESSAGE value="add Makefile" />
     <MESSAGE value="add Checkstyle" />
     <MESSAGE value="add game in App" />
     <MESSAGE value="add game Greeting" />
@@ -498,6 +535,12 @@
     <MESSAGE value="optimized" />
     <MESSAGE value="optimized checkstyle" />
     <MESSAGE value="Update build.gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update build.gradle" />
+    <MESSAGE value="Update Engine" />
+    <MESSAGE value="Update Calc" />
+    <MESSAGE value="Update Even" />
+    <MESSAGE value="Update Gcd" />
+    <MESSAGE value="Update Prime" />
+    <MESSAGE value="Update Progression" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Progression" />
   </component>
 </project>
