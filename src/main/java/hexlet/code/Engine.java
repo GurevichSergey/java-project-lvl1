@@ -51,11 +51,11 @@ public class Engine {
     }
     public final void wrongNumberAnswer() {
         System.out.print(numberAnswer + " is wrong answer ;(. Correct answer was " + numberResult + ". ");
-        System.out.println("Let's try again, " + name);
+        System.out.println("Let's try again, " + name + "!");
     }
     public final void wrongStringAnswer() {
         System.out.print(stringAnswer + " is wrong answer ;(. Correct answer was " + stringResult + ". ");
-        System.out.println("Let's try again, " + name);
+        System.out.println("Let's try again, " + name + "!");
     }
     public final int getRoundToWin() {
         return roundToWin;
