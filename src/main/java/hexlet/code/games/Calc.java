@@ -17,7 +17,7 @@ public class Calc {
             String operation = array[random.nextInt(array.length)];
             String question =  number1 + " " + operation + " " + number2;
             System.out.println("Question: " + question);
-            engine.stringUserAnswer();
+            engine.numberUserAnswer();
             int result = 0;
             switch (operation) {
                 case "+":
