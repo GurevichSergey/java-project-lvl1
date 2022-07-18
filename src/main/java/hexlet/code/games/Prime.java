@@ -11,7 +11,7 @@ public class Prime {
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
         Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var number = random.nextInt();
+            var number = random.nextInt(1000);
             System.out.println("Question: " + number);
             engine.stringUserAnswer();
             String result = "yes";
