@@ -13,6 +13,11 @@ public class Engine {
 
     public final int getRandomNumber() {
         Random random = new Random();
+        final int bound = 100;
+        return random.nextInt(bound);
+    }
+    public final int getRandomArrayLength() {
+        Random random = new Random();
         final int beginningBound = 5;
         final int endingBound = 11;
         return random.nextInt(beginningBound, endingBound);
