@@ -1,7 +1,6 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Random;
 
 
 public class Prime {
@@ -9,9 +8,8 @@ public class Prime {
         var engine = new Engine();
         engine.greeting();
         System.out.println("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
-        Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var number = random.nextInt(1000);
+            var number = engine.getRandomNumber();
             System.out.println("Question: " + number);
             engine.stringUserAnswer();
             String result = "yes";

@@ -1,7 +1,7 @@
 package hexlet.code;
 
 import java.util.Scanner;
-
+import java.util.Random;
 public class Engine {
     private String name;
     private final int roundToWin = 3;
@@ -10,6 +10,13 @@ public class Engine {
     private String stringAnswer;
     private int numberResult;
     private String stringResult;
+
+    public final int getRandomNumber() {
+        Random random = new Random();
+        final int beginningBound = 5;
+        final int endingBound = 100;
+        return random.nextInt(beginningBound, endingBound);
+    }
     public final void setStringResult(String result) {
         stringResult = result;
     }
@@ -39,9 +46,7 @@ public class Engine {
         name = scan.next();
         System.out.println("Hello, " + name + "!");
     }
-    public final String getName() {
-        return name;
-    }
+
     public final int round() {
         return round;
     }

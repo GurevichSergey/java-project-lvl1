@@ -1,16 +1,13 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import java.util.Random;
-
 public class Even {
     public static void even() {
         var engine = new Engine();
         engine.greeting();
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-        Random random = new Random();
         while (engine.round() < engine.getRoundToWin()) {
-            var randomNumber = random.nextInt();
+            var randomNumber = engine.getRandomNumber();
             System.out.println("Question: " + randomNumber);
             engine.stringUserAnswer();
             if (randomNumber % 2 == 0) {
