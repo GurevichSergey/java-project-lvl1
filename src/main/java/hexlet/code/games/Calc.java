@@ -13,9 +13,9 @@ public class Calc {
         while (engine.round() < engine.getRoundToWin()) {
             var number1 = random.nextInt();
             var number2 = random.nextInt();
-            String[] array = {" * ", " + ", " - "};
+            String[] array = {"*", "+", "-"};
             String operation = array[random.nextInt(array.length)];
-            String question =  number1 + operation + number2;
+            String question =  number1 + " " + operation + " " + number2;
             System.out.println("Question: " + question);
             engine.numberUserAnswer();
             int result = 0;
