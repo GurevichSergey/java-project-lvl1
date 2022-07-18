@@ -2,7 +2,6 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import java.util.Random;
-
 public class Progression {
     public static void progression() {
         var engine = new Engine();
