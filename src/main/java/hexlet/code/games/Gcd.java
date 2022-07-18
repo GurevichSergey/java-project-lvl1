@@ -14,7 +14,7 @@ public class Gcd {
         Random random = new Random();
         System.out.println("Find the greatest common divisor of given numbers.");
         while (engine.round() < engine.getRoundToWin()) {
-            int[] question = {random.nextInt(50), random.nextInt(50)};
+            int[] question = {random.nextInt(), random.nextInt()};
             var string = Arrays.toString(question).replace(",", "").replace("[", "").replace("]", "");
             System.out.println("Question: " + string);
             engine.numberUserAnswer();
