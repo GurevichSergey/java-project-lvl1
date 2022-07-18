@@ -10,7 +10,6 @@ public class Engine {
     private String stringAnswer;
     private int numberResult;
     private String stringResult;
-
     public final int getRandomNumber() {
         Random random = new Random();
         final int bound = 100;
