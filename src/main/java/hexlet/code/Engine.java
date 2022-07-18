@@ -62,7 +62,7 @@ public class Engine {
     }
     public final void winMessage() {
         if (round() == roundToWin) {
-            System.out.println("Congratulations, " + name);
+            System.out.println("Congratulations, " + name + "!");
         }
     }
 }
