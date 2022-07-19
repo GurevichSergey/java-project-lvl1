@@ -10,22 +10,19 @@ public class Even {
             var randomNumber = engine.getRandomNumber();
             System.out.println("Question: " + randomNumber);
             engine.stringUserAnswer();
+            String rightAnswer;
             if (randomNumber % 2 == 0) {
-                if (engine.getStringAnswer().equals("yes")) {
-                    engine.correctAnswer();
-                } else {
-                    engine.setStringResult("yes");
-                    engine.wrongStringAnswer();
-                    break;
-                }
+                rightAnswer = "yes";
             } else {
-                if (engine.getStringAnswer().equals("no")) {
-                    engine.correctAnswer();
-                } else {
-                    engine.setStringResult("no");
-                    engine.wrongStringAnswer();
-                    break;
+                rightAnswer = "no";
                 }
+            engine.setStringResult(rightAnswer);
+            if (engine.getStringAnswer().equals(rightAnswer)) {
+                engine.winMessage();
+            }
+            else {
+                engine.wrongStringAnswer();
+                break;
             }
         }
         engine.winMessage();
