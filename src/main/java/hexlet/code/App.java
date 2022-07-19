@@ -14,25 +14,18 @@ public class App {
         Scanner scan = new Scanner(System.in);
         System.out.print("Your choice: ");
         var number = scan.next();
-        switch (number) {
-            case "1":
-                Greeting.greeting();
-                break;
-            case "2":
-                Even.even();
-                break;
-            case "3":
-                Calc.calc();
-                break;
-            case "4":
-                Gcd.gcd();
-                break;
-            case "5":
-                Progression.progression();
-                break;
-            case "6":
-                Prime.prime();
-                break;
+        if ("1".equals(number)) {
+            Greeting.greeting();
+        } else if ("2".equals(number)) {
+            Even.even();
+        } else if ("3".equals(number)) {
+            Calc.calc();
+        } else if ("4".equals(number)) {
+            Gcd.gcd();
+        } else if ("5".equals(number)) {
+            Progression.progression();
+        } else if ("6".equals(number)) {
+            Prime.prime();
         }
     }
 }
