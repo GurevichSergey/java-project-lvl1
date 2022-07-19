@@ -10,15 +10,16 @@ public class Progression implements Interface {
     }
     public final String[] testAnswer() {
         Random random = new Random();
-        final var arrayLength = random.nextInt(5, 11);
-        int[] array = new int[arrayLength];
-        array[0] = random.nextInt();
-        var step = random.nextInt();
+        final var bound = 100;
+        final var randomBound = random.nextInt(5, 11);
+        int[] array = new int[randomBound];
+        array[0] = random.nextInt(bound);
+        var step = random.nextInt(randomBound);
         for (var i = 1; i < array.length; i++) {
             array[i] = array[i - 1] + step;
         }
-        var answer = random.nextInt(arrayLength);
-        String[] arrayString = new String[arrayLength];
+        var answer = random.nextInt(randomBound);
+        String[] arrayString = new String[randomBound];
         for (var x = 0; x < arrayString.length; x++) {
             arrayString[x] = Integer.toString(array[x]);
         }
