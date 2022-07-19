@@ -14,18 +14,19 @@ public class Progression implements Interface {
         final var randomBound = random.nextInt(5, 11);
         int[] array = new int[randomBound];
         array[0] = random.nextInt(bound);
-        var step = random.nextInt(randomBound);
+        var step = random.nextInt(bound);
         for (var i = 1; i < array.length; i++) {
             array[i] = array[i - 1] + step;
         }
-        var answer = random.nextInt(randomBound);
-        String[] arrayString = new String[randomBound];
+        var answerNumber = random.nextInt(randomBound);
+        String[] arrayString = new String[array.length];
         for (var x = 0; x < arrayString.length; x++) {
             arrayString[x] = Integer.toString(array[x]);
         }
-        arrayString[answer] = "..";
+        var answer = arrayString[answerNumber];
+        arrayString[answerNumber] = "..";
         String joinedQuestionNumber = String.join(" ", arrayString);
-        return new String[] {joinedQuestionNumber, String.valueOf(answer)};
+        return new String[] {joinedQuestionNumber, answer};
     }
     public static void game() {
         var engine = new Engine();
