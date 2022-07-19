@@ -1,7 +1,6 @@
 package hexlet.code;
 
 import java.util.Scanner;
-import java.util.Random;
 public class Engine {
     public static void runGame(Interface game, String name) {
         System.out.println(game.gameQuestion());

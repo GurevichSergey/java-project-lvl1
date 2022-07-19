@@ -7,10 +7,10 @@ import java.util.Arrays;
 import java.util.Random;
 
 
-public class Gcd implements Interface{
-        public final String gameQuestion() {
-            return "Find the greatest common divisor of given numbers.";
-        }
+public class Gcd implements Interface {
+    public final String gameQuestion() {
+        return "Find the greatest common divisor of given numbers.";
+    }
     public final String[] testAnswer() {
         final int bound = 50;
         Random random = new Random();

@@ -16,23 +16,17 @@ public class App {
         var number = scan.next();
         switch (number) {
             case "1":
-                Greeting.greeting();
-                break;
+                Greeting.greeting(); break;
             case "2":
-                Even.game();
-                break;
+                Even.game(); break;
             case "3":
-                Calc.game();
-                break;
+                Calc.game(); break;
             case "4":
-                Gcd.game();
-                break;
+                Gcd.game(); break;
             case "5":
-                Progression.game();
-                break;
+                Progression.game(); break;
             case "6":
-                Prime.game();
-                break;
+                Prime.game(); break;
             default:
                 break;
         }

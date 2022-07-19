@@ -6,7 +6,7 @@ import hexlet.code.Interface;
 import java.util.Random;
 
 
-public class Calc implements Interface{
+public class Calc implements Interface {
     public final String gameQuestion() {
         return "What is the result of the expression?";
     }
