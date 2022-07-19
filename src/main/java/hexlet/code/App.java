@@ -17,15 +17,15 @@ public class App {
         if ("1".equals(number)) {
             Greeting.greeting();
         } else if ("2".equals(number)) {
-            Even.even();
+            Even.game();
         } else if ("3".equals(number)) {
-            Calc.calc();
+            Calc.game();
         } else if ("4".equals(number)) {
-            Gcd.gcd();
+            Gcd.game();
         } else if ("5".equals(number)) {
-            Progression.progression();
+            Progression.game();
         } else if ("6".equals(number)) {
-            Prime.prime();
+            Prime.game();
         }
     }
 }
