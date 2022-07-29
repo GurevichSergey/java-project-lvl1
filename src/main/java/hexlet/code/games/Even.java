@@ -1,30 +1,25 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import hexlet.code.Interface;
-
 import java.util.Random;
 
-public class Even  implements Interface {
-    public final String gameQuestion() {
-        return "Answer 'yes' if number even otherwise answer 'no'.";
-    }
-    public final String[] testAnswer() {
-        final int bound = 10000;
-        Random random = new Random();
-        int questionNumber = random.nextInt(bound);
-        String answer;
-        if (questionNumber % 2 == 0) {
-            answer = "yes";
-        } else {
-            answer = "no";
-        }
-        return new String[] {String.valueOf(questionNumber), answer};
-    }
+public class Even {
     public static void game() {
+        var question = "Answer 'yes' if number even otherwise answer 'no'.";
+        final int bound = 10000;
         var engine = new Engine();
-        Interface even = new Even();
-        String name = engine.greeting();
-        Engine.runGame(even, name);
+        Random random = new Random();
+        String[] rightAnswer = new String[engine.getRound()];
+        String[] questionGame = new String[engine.getRound()];
+        for (var x = 0; x < engine.getRound(); x++) {
+            int questionNumber = random.nextInt(bound);
+            if (questionNumber % 2 == 0) {
+                rightAnswer[x] = "yes";
+            } else {
+                rightAnswer[x] = "no";
+            }
+            questionGame[x] = Integer.toString(questionNumber);
+        }
+        Engine.runGame(rightAnswer, questionGame, question);
     }
 }
