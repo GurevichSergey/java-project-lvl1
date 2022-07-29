@@ -2,7 +2,6 @@ package hexlet.code;
 import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.Gcd;
-import hexlet.code.games.Greeting;
 import hexlet.code.games.Prime;
 import hexlet.code.games.Progression;
 import java.util.Scanner;
@@ -16,17 +15,25 @@ public class App {
         var number = scan.next();
         switch (number) {
             case "1":
-                Greeting.greeting(); break;
+                System.out.print("Welcome to the Brain Games!\nMay I have your name? ");
+                var name = scan.next();
+                System.out.println("Hello, " + name + "!");
+                break;
             case "2":
-                Even.game(); break;
+                Even.game();
+                break;
             case "3":
-                Calc.game(); break;
+                Calc.game();
+                break;
             case "4":
-                Gcd.game(); break;
+                Gcd.game();
+                break;
             case "5":
-                Progression.game(); break;
+                Progression.game();
+                break;
             case "6":
-                Prime.game(); break;
+                Prime.game();
+                break;
             default:
                 break;
         }
