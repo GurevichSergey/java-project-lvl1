@@ -24,10 +24,9 @@ public class Progression {
             for (var i = 0; i < arrayString.length; i++) {
                 arrayString[i] = Integer.toString(array[i]);
             }
-            var answer = arrayString[answerNumber];
             arrayString[answerNumber] = "..";
             String joinedQuestionNumber = String.join(" ", arrayString);
-            rightAnswer[x] = answer;
+            rightAnswer[x] = arrayString[answerNumber];
             questionGame[x] = joinedQuestionNumber;
         }
         Engine.runGame(rightAnswer, questionGame, question);
