@@ -1,43 +1,43 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
-import hexlet.code.Interface;
-
 import java.util.Random;
 
 
-public class Calc implements Interface {
-    public final String gameQuestion() {
-        return "What is the result of the expression?";
-    }
-    public final String[] testAnswer() {
+public class Calc {
+    public static void game() {
+        var question = "What is the result of the expression?";
         final int bound = 100;
+        var engine = new Engine();
         Random random = new Random();
-        var number1 = random.nextInt(bound);
-        var number2 = random.nextInt(bound);
+        String[] rightAnswer = new String[engine.getRound()];
+        String[] questionGame = new String[engine.getRound()];
         String[] array = {"*", "+", "-"};
-        String operation = array[random.nextInt(array.length)];
-        String question = number1 + " " + operation + " " + number2;
-        int answer = 0;
+        for (var x = 0; x < engine.getRound(); x++) {
+            var number1 = random.nextInt(bound);
+            var number2 = random.nextInt(bound);
+            String operation = array[random.nextInt(array.length)];
+            questionGame[x] = number1 + " " + operation + " " + number2;
+            var answer = calculate(number1, number2, operation);
+            rightAnswer[x] = Integer.toString(answer);
+        }
+        Engine.runGame(rightAnswer, questionGame, question);
+    }
+    public static int calculate(int firstNumber, int secondNumber, String operation) {
+        int answer;
         switch (operation) {
             case "+":
-                answer = number1 + number2;
+                answer = firstNumber + secondNumber;
                 break;
             case "-":
-                answer = number1 - number2;
+                answer = firstNumber - secondNumber;
                 break;
             case "*":
-                answer = number1 * number2;
+                answer = firstNumber * secondNumber;
                 break;
             default:
-                break;
+                throw new RuntimeException("Operator not defined correctly");
         }
-        return new String[]{question, String.valueOf(answer)};
-    }
-    public static void game() {
-        var engine = new Engine();
-        Interface calc = new Calc();
-        String name = engine.greeting();
-        Engine.runGame(calc, name);
+        return answer;
     }
 }
