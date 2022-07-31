@@ -15,9 +15,7 @@ public class App {
         var number = scan.next();
         switch (number) {
             case "1":
-                System.out.print("Welcome to the Brain Games!\nMay I have your name? ");
-                var name = scan.next();
-                System.out.println("Hello, " + name + "!");
+                Cli.greet();
                 break;
             case "2":
                 Even.game();
@@ -35,6 +33,7 @@ public class App {
                 Prime.game();
                 break;
             default:
+                System.out.println("You entered a number that is not in the list. Let's try again.");
                 break;
         }
     }
