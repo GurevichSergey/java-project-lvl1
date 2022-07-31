@@ -7,21 +7,18 @@ import java.util.Random;
 public class Calc {
     public static void game() {
         var question = "What is the result of the expression?";
-        final int bound = 100;
-        var engine = new Engine();
         Random random = new Random();
-        String[] rightAnswer = new String[engine.getRound()];
-        String[] questionGame = new String[engine.getRound()];
+        String[][] questionAndAnswer = new String[Engine.ROUND][2];
         String[] array = {"*", "+", "-"};
-        for (var x = 0; x < engine.getRound(); x++) {
-            var number1 = random.nextInt(bound);
-            var number2 = random.nextInt(bound);
+        for (var x = 0; x < Engine.ROUND; x++) {
+            var number1 = Engine.randomBound();
+            var number2 = Engine.randomBound();
             String operation = array[random.nextInt(array.length)];
-            questionGame[x] = number1 + " " + operation + " " + number2;
+            questionAndAnswer[x][0] = number1 + " " + operation + " " + number2;
             var answer = calculate(number1, number2, operation);
-            rightAnswer[x] = Integer.toString(answer);
+            questionAndAnswer[x][1] = Integer.toString(answer);
         }
-        Engine.runGame(rightAnswer, questionGame, question);
+        Engine.runGame(questionAndAnswer, question);
     }
     public static int calculate(int firstNumber, int secondNumber, String operation) {
         int answer;
