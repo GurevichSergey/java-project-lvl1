@@ -23,7 +23,7 @@ public class Prime {
         }
         for (var i = 2; i < number / 2; i++) {
             var check = number % i;
-            if (check == 0 ) {
+            if (check == 0) {
                 answer = "no";
                 break;
             }
