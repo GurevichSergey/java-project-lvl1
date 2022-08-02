@@ -3,16 +3,37 @@
 <a href="https://codeclimate.com/github/GurevichSergey/java-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/858f6cd7995ae929aae1/maintainability" /></a>
 <a href="https://codeclimate.com/github/GurevichSergey/java-project-lvl1/test_coverage"><img src="https://api.codeclimate.com/v1/badges/858f6cd7995ae929aae1/test_coverage" /></a>
 
-1) asciinema https://asciinema.org/a/q4KEUyNZWJbYhOZDGVjSmrwAc
+There are five mini-games in this project:
+1) Calculator
+2) Even
+3) GCD
+4) Prime
+5) Progression
 
-2) asciinema https://asciinema.org/a/oitwWjN75lGA3iplk2XZngkIW
+### Calculator
+```sh
+asciinema https://asciinema.org/a/q4KEUyNZWJbYhOZDGVjSmrwAc
+```
 
-3) asciinema https://asciinema.org/a/FdGjTfxj5x7EvBibwzVvniFry
+### Even
+```sh
+asciinema https://asciinema.org/a/oitwWjN75lGA3iplk2XZngkIW
+```
 
-4) asciinema https://asciinema.org/a/nB9xBUHo4wsbwVTzoDpr5vxZE
+### GCD
+```sh
+asciinema https://asciinema.org/a/FdGjTfxj5x7EvBibwzVvniFry
+```
 
-5) asciinema https://asciinema.org/a/2qAzUvvA4juxXk5XaGc0tdy8q
+### Prime
+```sh
+asciinema https://asciinema.org/a/nB9xBUHo4wsbwVTzoDpr5vxZE
+```
 
+### Progression
+```sh
+asciinema https://asciinema.org/a/2qAzUvvA4juxXk5XaGc0tdy8q
+```
 
 
 
