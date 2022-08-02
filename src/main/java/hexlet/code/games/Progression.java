@@ -1,6 +1,8 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
+
 import java.util.Random;
 public class Progression {
     public static void game() {
@@ -9,8 +11,13 @@ public class Progression {
         String[][] questionAndAnswer = new String[Engine.ROUND][2];
         for (var x = 0; x < Engine.ROUND; x++) {
             final var arrayLength = random.nextInt(5, 11);
-            var step = Engine.randomBound();
-            var arrayString = arrayStringBuilder(step, arrayLength);
+            var step = Utils.randomBound();
+            var firstNumber = Utils.randomBound();
+            var array = arrayBuilder(step, arrayLength, firstNumber);
+            String[] arrayString = new String[arrayLength];
+            for (var i = 0; i < arrayString.length; i++) {
+                arrayString[i] = Integer.toString(array[i]);
+            }
             var answerNumber = random.nextInt(arrayLength);
             var answer = arrayString[answerNumber];
             arrayString[answerNumber] = "..";
@@ -19,17 +26,13 @@ public class Progression {
         }
         Engine.runGame(questionAndAnswer, question);
     }
-    public static String[] arrayStringBuilder(int step, int arrayLength) {
+    public static int[] arrayBuilder(int step, int arrayLength, int firstNumber) {
         int[] array = new int[arrayLength];
-        array[0] = Engine.randomBound();
+        array[0] = firstNumber;
         for (var i = 1; i < array.length; i++) {
             array[i] = array[i - 1] + step;
         }
-        String[] arrayString = new String[array.length];
-        for (var i = 0; i < arrayString.length; i++) {
-            arrayString[i] = Integer.toString(array[i]);
-        }
-        return arrayString;
+        return array;
     }
 }
 
