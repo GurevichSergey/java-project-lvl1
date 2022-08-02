@@ -10,16 +10,30 @@ There are five mini-games in this project:
 4) Prime
 5) Progression
 
-1) asciinema https://asciinema.org/a/q4KEUyNZWJbYhOZDGVjSmrwAc
+### Calculator
+```sh
+asciinema https://asciinema.org/a/q4KEUyNZWJbYhOZDGVjSmrwAc
+```
 
-2) asciinema https://asciinema.org/a/oitwWjN75lGA3iplk2XZngkIW
+### Even
+```sh
+asciinema https://asciinema.org/a/oitwWjN75lGA3iplk2XZngkIW
+```
 
-3) asciinema https://asciinema.org/a/FdGjTfxj5x7EvBibwzVvniFry
+### GCD
+```sh
+asciinema https://asciinema.org/a/FdGjTfxj5x7EvBibwzVvniFry
+```
 
-4) asciinema https://asciinema.org/a/nB9xBUHo4wsbwVTzoDpr5vxZE
+### Prime
+```sh
+asciinema https://asciinema.org/a/nB9xBUHo4wsbwVTzoDpr5vxZE
+```
 
-5) asciinema https://asciinema.org/a/2qAzUvvA4juxXk5XaGc0tdy8q
-
+### Progression
+```sh
+asciinema https://asciinema.org/a/2qAzUvvA4juxXk5XaGc0tdy8q
+```
 
 
 
