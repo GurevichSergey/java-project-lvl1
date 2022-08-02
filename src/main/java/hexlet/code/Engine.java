@@ -1,6 +1,5 @@
 package hexlet.code;
 
-import java.util.Random;
 import java.util.Scanner;
 public class Engine {
     public static final int ROUND = 3;
@@ -24,11 +23,6 @@ public class Engine {
             }
         }
         System.out.println("Congratulations, " + name + "!");
-    }
-    public static int randomBound() {
-        Random random = new Random();
-        final int bound = 100;
-        return random.nextInt(bound);
     }
 }
 
