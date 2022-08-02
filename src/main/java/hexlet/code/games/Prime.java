@@ -19,7 +19,7 @@ public class Prime {
         var answer = "yes";
         for (var i = 2; i < number / 2; i++) {
             var check = number % i;
-            if (check == 0) {
+            if (check == 0 && number ==0) {
                 answer = "no";
                 break;
             }
