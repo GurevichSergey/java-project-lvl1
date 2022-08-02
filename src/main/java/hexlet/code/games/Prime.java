@@ -17,9 +17,13 @@ public class Prime {
     }
     public static String isPrime(int number) {
         var answer = "yes";
+        if (number == 0) {
+            answer = "no";
+            return answer;
+        }
         for (var i = 2; i < number / 2; i++) {
             var check = number % i;
-            if (check == 0 || number == 0) {
+            if (check == 0 ) {
                 answer = "no";
                 break;
             }
