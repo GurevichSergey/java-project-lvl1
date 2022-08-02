@@ -1,6 +1,8 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
+
 import java.util.Random;
 
 
@@ -11,8 +13,8 @@ public class Calc {
         String[][] questionAndAnswer = new String[Engine.ROUND][2];
         String[] array = {"*", "+", "-"};
         for (var x = 0; x < Engine.ROUND; x++) {
-            var number1 = Engine.randomBound();
-            var number2 = Engine.randomBound();
+            var number1 = Utils.randomBound();
+            var number2 = Utils.randomBound();
             String operation = array[random.nextInt(array.length)];
             questionAndAnswer[x][0] = number1 + " " + operation + " " + number2;
             var answer = calculate(number1, number2, operation);

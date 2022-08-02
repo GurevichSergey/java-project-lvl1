@@ -1,6 +1,7 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
 import java.util.Arrays;
 
@@ -10,7 +11,7 @@ public class Gcd {
         var question = "Find the greatest common divisor of given numbers.";
         String[][] questionAndAnswer = new String[Engine.ROUND][2];
         for (var x = 0; x < Engine.ROUND; x++) {
-            int[] questionNumber = {Engine.randomBound(), Engine.randomBound()};
+            int[] questionNumber = {Utils.randomBound(), Utils.randomBound()};
             var stringQuestion = Arrays.toString(questionNumber).replace(",", "").replace("[", "").replace("]", "");
             questionAndAnswer[x][0] = stringQuestion;
             var firstNumber = questionNumber[0];
