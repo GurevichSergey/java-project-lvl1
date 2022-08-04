@@ -13,7 +13,7 @@ public class Progression {
             final var arrayLength = random.nextInt(5, 11);
             var step = Utils.randomBound();
             var firstNumber = Utils.randomBound();
-            var array = arrayBuilder(step, arrayLength, firstNumber);
+            var array = progressionBuild(step, arrayLength, firstNumber);
             String[] arrayString = new String[arrayLength];
             for (var i = 0; i < arrayString.length; i++) {
                 arrayString[i] = Integer.toString(array[i]);
@@ -26,11 +26,11 @@ public class Progression {
         }
         Engine.runGame(questionAndAnswer, question);
     }
-    public static int[] arrayBuilder(int step, int arrayLength, int firstNumber) {
+    public static int[]  progressionBuild(int step, int arrayLength, int firstNumber) {
         int[] array = new int[arrayLength];
         array[0] = firstNumber;
         for (var i = 1; i < array.length; i++) {
-            array[i] = array[i - 1] + step;
+            array[i] = array[0] + (i - 1) * step;
         }
         return array;
     }
