@@ -10,21 +10,17 @@ public class Prime {
         String[][] questionAndAnswer = new String[Engine.ROUND][2];
         for (var x = 0; x < Engine.ROUND; x++) {
             var questionNumber = Utils.randomBound();
-            questionAndAnswer[x][1] = isPrime(questionNumber);
+            questionAndAnswer[x][1] = isPrime(questionNumber) ? "yes" : "no";
             questionAndAnswer[x][0] = Integer.toString(questionNumber);
         }
         Engine.runGame(questionAndAnswer, question);
     }
-    public static String isPrime(int number) {
-        var answer = "yes";
-        if (number == 0) {
-            answer = "no";
-            return answer;
-        }
+    public static boolean isPrime(int number) {
+        boolean answer = number >= 2;
         for (var i = 2; i < number / 2; i++) {
             var check = number % i;
             if (check == 0) {
-                answer = "no";
+                answer = false;
                 break;
             }
         }
