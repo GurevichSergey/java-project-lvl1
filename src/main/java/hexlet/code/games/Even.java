@@ -9,18 +9,14 @@ public class Even {
         String[][] questionAndAnswer = new String[Engine.ROUND][2];
         for (var j = 0; j < Engine.ROUND; j++) {
             int questionNumber = Utils.randomBound();
-            questionAndAnswer[j][1] = isEven(questionNumber);
+            questionAndAnswer[j][1] = isEven(questionNumber) ? "yes" : "no";
             questionAndAnswer[j][0] = Integer.toString(questionNumber);
         }
         Engine.runGame(questionAndAnswer, question);
     }
-    public static String isEven(int number) {
-        String rightAnswer;
-        if (number % 2 == 0) {
-            rightAnswer = "yes";
-        } else {
-            rightAnswer = "no";
-        }
+    public static boolean isEven(int number) {
+        boolean rightAnswer;
+        rightAnswer = number % 2 == 0;
         return rightAnswer;
     }
 }
