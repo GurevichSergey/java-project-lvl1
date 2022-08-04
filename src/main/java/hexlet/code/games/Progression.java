@@ -29,7 +29,7 @@ public class Progression {
     public static int[]  progressionBuild(int step, int arrayLength, int firstNumber) {
         int[] array = new int[arrayLength];
         for (var i = 1; i < array.length; i++) {
-            array[i] = array[firstNumber] + (i - 1) * step;
+            array[i] = firstNumber + (i - 1) * step;
         }
         return array;
     }
