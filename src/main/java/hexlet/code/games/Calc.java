@@ -10,8 +10,8 @@ public class Calc {
     public static void game() {
         var question = "What is the result of the expression?";
         Random random = new Random();
-        String[][] questionAndAnswer = new String[Engine.ROUND][2];
-        String[] array = {"*", "+", "-"};
+        var questionAndAnswer = new String[Engine.ROUND][2];
+        var array = new String[]{"*", "+", "-"};
         for (var x = 0; x < Engine.ROUND; x++) {
             var number1 = Utils.randomBound();
             var number2 = Utils.randomBound();
