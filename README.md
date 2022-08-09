@@ -11,29 +11,29 @@ There are five mini-games in this project:
 5) Progression
 
 ### Calculator
-```sh
-asciinema https://asciinema.org/a/q4KEUyNZWJbYhOZDGVjSmrwAc
-```
+
+[![asciicast](https://asciinema.org/a/Uh3nblegaULFGz9KYBqFD37bn.png)](https://asciinema.org/a/Uh3nblegaULFGz9KYBqFD37bn)
+
 
 ### Even
-```sh
-asciinema https://asciinema.org/a/oitwWjN75lGA3iplk2XZngkIW
-```
+
+[![asciicast](https://asciinema.org/a/6p7Vn7TbKzaWhPX4DSyGtI9I8.png)](https://asciinema.org/a/6p7Vn7TbKzaWhPX4DSyGtI9I8)
+
 
 ### GCD
-```sh
-asciinema https://asciinema.org/a/FdGjTfxj5x7EvBibwzVvniFry
-```
+
+[![asciicast](https://asciinema.org/a/1carvkSB6fVre2MD1ttGb1F1B.png)](https://asciinema.org/a/1carvkSB6fVre2MD1ttGb1F1B)
+
 
 ### Prime
-```sh
-asciinema https://asciinema.org/a/nB9xBUHo4wsbwVTzoDpr5vxZE
-```
+
+[![asciicast](https://asciinema.org/a/sz7yvpXW2Utwszy9u2RpbfQ26.png)](https://asciinema.org/a/sz7yvpXW2Utwszy9u2RpbfQ26)
+
 
 ### Progression
-```sh
-asciinema https://asciinema.org/a/2qAzUvvA4juxXk5XaGc0tdy8q
-```
+
+[![asciicast](https://asciinema.org/a/s6KAvlrYAlPpIu3tw6feFwfXE.png)](https://asciinema.org/a/s6KAvlrYAlPpIu3tw6feFwfXE)
+
 
 
 
