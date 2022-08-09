@@ -16,14 +16,15 @@ public class Prime {
         Engine.runGame(questionAndAnswer, question);
     }
     public static boolean isPrime(int number) {
-        boolean answer = number >= 2;
+        if (number < 2) {
+            return false;
+            }
         for (var i = 2; i < number / 2; i++) {
             var check = number % i;
             if (check == 0) {
-                answer = false;
-                break;
+                return false;
             }
         }
-        return answer;
+        return true;
     }
 }
